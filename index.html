@@ -1,41 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>For My Favourite Person 💗</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Little Surprise 💗</title>
+
 <style>
-:root{--pink:#f7dbe5;--rose:#c85f7d;--cream:#fffaf7;--ink:#49343b;--soft:#fff0f4;--line:#ead3db}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif}.wrap{max-width:760px;margin:auto;padding:22px 16px 60px}.hero{min-height:92vh;display:grid;place-items:center;text-align:center;position:relative}.sticker{position:absolute;font-size:38px;animation:float 3.5s ease-in-out infinite}.s1{left:5%;top:16%}.s2{right:6%;top:24%;animation-delay:.7s}.s3{left:12%;bottom:20%;animation-delay:1.2s}.s4{right:12%;bottom:14%;animation-delay:1.8s}@keyframes float{50%{transform:translateY(-10px) rotate(5deg)}}.hero-card{background:white;border:1px solid var(--line);border-radius:32px;padding:42px 25px;box-shadow:0 18px 50px #d99caf30}.eyebrow{letter-spacing:2px;text-transform:uppercase;font-size:12px;color:var(--rose);font-weight:800}.hero h1{font-size:clamp(38px,10vw,70px);line-height:.98;margin:14px 0;color:#3e2930}.hero p{font-size:17px;line-height:1.6;margin:18px auto;max-width:530px}.btn{border:0;border-radius:999px;background:var(--rose);color:white;padding:13px 20px;font-weight:800;font-size:15px;cursor:pointer;box-shadow:0 8px 20px #c85f7d30}.section{padding:58px 0}.section h2{text-align:center;font-size:30px;margin:0 0 10px}.sub{text-align:center;color:#826b73;margin:0 0 25px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.note{background:white;border:1px solid var(--line);border-radius:22px;padding:20px;min-height:145px;position:relative}.note:before{content:'♡';position:absolute;right:16px;top:12px;color:#d9859a;font-size:20px}.note h3{margin:0 0 8px;font-size:17px}.note p{margin:0;line-height:1.55;color:#665159}.question{background:linear-gradient(135deg,#fff,#fff1f5);border:1px solid var(--line);border-radius:26px;padding:24px;margin:14px 0}.question strong{display:block;font-size:18px;margin-bottom:13px}.answers{display:flex;gap:9px;flex-wrap:wrap}.answer{border:1px solid #dfb7c4;background:white;border-radius:999px;padding:10px 14px;color:#684651;cursor:pointer}.answer:hover{background:#ffe8ef}.reply{display:none;margin-top:13px;background:#fff;border-radius:16px;padding:12px 14px;color:#a74f6c;font-weight:700}.reveal{background:#49343b;color:white;border-radius:28px;padding:27px;text-align:center;margin-top:25px}.reveal button{background:#f7dbe5;color:#49343b}.big-note{background:white;border:1px solid var(--line);border-radius:30px;padding:30px 24px;line-height:1.75;font-size:17px;box-shadow:0 12px 35px #d99caf25}.footer{text-align:center;padding-top:40px;color:#987c85;font-size:13px}.heart{display:inline-block;animation:pulse 1.4s infinite}@keyframes pulse{50%{transform:scale(1.18)}}@media(max-width:560px){.grid{grid-template-columns:1fr}.hero-card{padding:35px 20px}.section{padding:45px 0}}
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#fff7fb;
+  color:#4b3541;
+  text-align:center;
+}
+
+.wrap{
+  max-width:650px;
+  margin:auto;
+  padding:20px;
+}
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+h1{
+  font-size:38px;
+  margin:10px 0;
+}
+
+h2{
+  color:#c85f7d;
+}
+
+p{
+  line-height:1.6;
+}
+
+.sticker{
+  font-size:55px;
+  margin:10px;
+}
+
+.card,.note,.reason{
+  background:white;
+  border-radius:22px;
+  padding:22px;
+  margin:18px 0;
+  box-shadow:0 8px 25px rgba(180,80,120,.12);
+}
+
+button{
+  border:0;
+  background:#c85f7d;
+  color:white;
+  padding:13px 22px;
+  border-radius:30px;
+  font-size:16px;
+  cursor:pointer;
+  margin:7px;
+}
+
+button:hover{
+  transform:scale(1.03);
+}
+
+.hidden{
+  display:none;
+}
+
+.question{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.final{
+  background:#fff0f5;
+  padding:28px;
+  border-radius:25px;
+  margin:30px 0;
+}
+
+.small{
+  font-size:13px;
+  opacity:.7;
+}
+
+footer{
+  padding:30px 0;
+  font-size:13px;
+}
 </style>
 </head>
+
 <body>
-<main class="wrap">
+
+<div class="wrap">
+
+<!-- INTRO -->
 <section class="hero">
-<span class="sticker s1">🎀</span><span class="sticker s2">🧸</span><span class="sticker s3">💌</span><span class="sticker s4">✨</span>
-<div class="hero-card"><div class="eyebrow">a tiny internet corner made for you</div><h1>Hey, you. 💗</h1><p>I could've just said “Happy Boyfriend Day”… but obviously that wasn't enough.</p><p>So I made you this little place full of things I want you to know.</p><button class="btn" onclick="document.getElementById('notes').scrollIntoView()">Open your surprise →</button></div>
-</section>
-<section class="section" id="notes"><h2>Little things I want you to know</h2><p class="sub">No big speech. Just tiny pieces of my heart.</p>
-<div class="grid">
-<div class="note"><h3>01 · My favourite thing</h3><p>It's the way you can make an ordinary day feel a little less ordinary.</p></div>
-<div class="note"><h3>02 · A tiny confession</h3><p>Sometimes I randomly smile because I remembered something about you. Yes, it's embarrassing. No, I won't stop.</p></div>
-<div class="note"><h3>03 · Thank you</h3><p>For being there, for the little efforts, and for all the moments that became “our” moments.</p></div>
-<div class="note"><h3>04 · One promise</h3><p>I want to keep choosing honest conversations, silly moments and making more memories with you.</p></div>
-</div></section>
-<section class="section"><h2>Okay, now answer these 😌</h2><p class="sub">There are no wrong answers. Probably.</p>
-<div class="question"><strong>What do you think I love most about you?</strong><div class="answers"><button class="answer" onclick="reply(this,'Your heart. And the little things you do without realizing. 🥹')">Your smile</button><button class="answer" onclick="reply(this,'Your heart. And the little things you do without realizing. 🥹')">Your heart</button><button class="answer" onclick="reply(this,'Your heart. And the little things you do without realizing. 🥹')">Everything</button></div><div class="reply"></div></div>
-<div class="question"><strong>If our relationship was a movie, what would the genre be?</strong><div class="answers"><button class="answer" onclick="reply(this,'Rom-com was the only acceptable answer. 😂💗')">Rom-com</button><button class="answer" onclick="reply(this,'Rom-com was the only acceptable answer. 😂💗')">Drama</button><button class="answer" onclick="reply(this,'Rom-com was the only acceptable answer. 😂💗')">Cute chaos</button></div><div class="reply"></div></div>
-<div class="question"><strong>One thing we absolutely need to do together?</strong><div class="answers"><button class="answer" onclick="reply(this,'Correct answer: make a ridiculous number of memories together. 🫶🏻')">Make memories</button><button class="answer" onclick="reply(this,'Correct answer: make a ridiculous number of memories together. 🫶🏻')">Travel</button><button class="answer" onclick="reply(this,'Correct answer: make a ridiculous number of memories together. 🫶🏻')">Everything</button></div><div class="reply"></div></div>
-</section>
-<section class="section"><h2>Reasons, in no particular order ♡</h2><div class="grid">
-<div class="note"><h3>Because…</h3><p>you feel like home in a world that can feel very noisy.</p></div>
-<div class="note"><h3>Because…</h3><p>you know how to make me laugh when I don't even feel like laughing.</p></div>
-<div class="note"><h3>Because…</h3><p>even the smallest memories with you somehow stay with me.</p></div>
-<div class="note"><h3>Because…</h3><p>I like the person I am when I'm being completely myself with you.</p></div>
+
+<div class="sticker">🎀💗🎀</div>
+
+<p>A tiny surprise made especially for</p>
+
+<h1 id="personName">Your Favourite Person</h1>
+
+<p>
+You probably weren't expecting this...
+but I wanted to make you something cute. 🥹
+</p>
+
+<button onclick="showSurprise()">
+Open your surprise 💌
+</button>
+
+<div id="introMessage" class="card hidden">
+<p>
+Okayyy... you made it here. 👀💗
+Now don't leave without exploring everything.
+</p>
 </div>
-<div class="reveal"><p style="font-size:24px;margin:0 0 8px">One last thing…</p><p id="secret" style="display:none;font-size:18px;line-height:1.6">I don't need a perfect relationship. I just want something real, warm, silly, honest and ours. And I'm really happy that you're the person I get to share this with. 💗</p><button class="btn" onclick="document.getElementById('secret').style.display='block';this.style.display='none'">Tap to read</button></div>
+
 </section>
-<section class="section"><h2>Happy Boyfriend Day 🫶🏻</h2><div class="big-note"><p>Hey love,</p><p>There are probably a hundred things I could write here, but honestly, I just want you to know that I'm grateful for you.</p><p>For the laughs. The conversations. The random little moments. The comfort. The chaos. And all those memories that became special simply because you were there.</p><p>I hope we keep growing, learning, annoying each other a little 😭, laughing a lot, and creating our own little collection of memories.</p><p>Thank you for being you.</p><p><strong>Happy Boyfriend Day to my favourite person. <span class="heart">♥</span></strong></p></div></section>
-<div class="footer">made with too much love & a tiny bit of overthinking 🎀</div>
-</main>
-<script>function reply(btn,msg){const box=btn.parentElement.nextElementSibling;box.textContent=msg;box.style.display='block';}</script>
-</body></html>
+
+
+<!-- NOTES -->
+<section>
+
+<h2>Little things I want you to know 🌷</h2>
+
+<div class="note">
+<h3>01 · My favourite thing</h3>
+<p>You somehow make ordinary moments feel special.</p>
+</div>
+
+<div class="note">
+<h3>02 · A tiny confession</h3>
+<p>
+I may not always say everything perfectly,
+but you genuinely mean a lot to me.
+</p>
+</div>
+
+<div class="note">
+<h3>03 · One thing I hope</h3>
+<p>
+I hope we keep making silly memories together.
+</p>
+</div>
+
+</section>
+
+
+<!-- REASONS -->
+<section>
+
+<h2>Reasons you're special 💗</h2>
+
+<div class="reason">🌸 You make me smile without trying.</div>
+<div class="reason">🫶 You make little moments memorable.</div>
+<div class="reason">😂 You understand my weird side.</div>
+<div class="reason">💌 You have a very special place in my heart.</div>
+
+</section>
+
+
+<!-- QUESTIONS -->
+<section>
+
+<h2>Okay, now your turn 👀</h2>
+
+<div class="card">
+
+<p class="question">
+Who is more dramatic?
+</p>
+
+<button onclick="answer('Obviously YOU 😂')">
+Me
+</button>
+
+<button onclick="answer('Definitely YOU 😂❤️')">
+You
+</button>
+
+<p id="answer1"></p>
+
+</div>
+
+
+<div class="card">
+
+<p class="question">
+Who should plan our next cute date? 🌷
+</p>
+
+<button onclick="answer2('You better plan it 😌')">
+Me
+</button>
+
+<button onclick="answer2('Fine, I will 🥹')">
+You
+</button>
+
+<p id="answer2"></p>
+
+</div>
+
+</section>
+
+
+<!-- FINAL -->
+<section class="final">
+
+<div class="sticker">💌</div>
+
+<h2>One last thing...</h2>
+
+<p>
+No matter how simple this little website is,
+I made it because you are special to me.
+</p>
+
+<h2>Thank you for being you. ❤️</h2>
+
+<p>
+Here's a virtual hug 🫂
+</p>
+
+<button onclick="reveal()">
+One last surprise ✨
+</button>
+
+<div id="finalMessage" class="hidden">
+
+<h2>💗 YOU ARE LOVED 💗</h2>
+
+<p>
+And yes... you officially reached the end. 😂
+</p>
+
+<p>
+Now go give me a hug. 🫂
+</p>
+
+</div>
+
+</section>
+
+
+<footer>
+Made with love & a little bit of craziness 🎀
+</footer>
+
+</div>
+
+
+<script>
+
+function showSurprise(){
+  document.getElementById("introMessage").classList.remove("hidden");
+}
+
+function answer(text){
+  document.getElementById("answer1").innerText=text;
+}
+
+function answer2(text){
+  document.getElementById("answer2").innerText=text;
+}
+
+function reveal(){
+  document.getElementById("finalMessage").classList.remove("hidden");
+}
+
+</script>
+
+</body>
+</html>
